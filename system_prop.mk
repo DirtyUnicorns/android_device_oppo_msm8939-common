@@ -73,3 +73,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.sys.fw.bservice_enable=true \
     ro.sys.fw.bservice_limit=5 \
     ro.sys.fw.bservice_age=5000
+
+#Trim properties
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.sys.fw.use_trim_settings=true \
+    ro.sys.fw.empty_app_percent=50 \
+    ro.sys.fw.trim_empty_percent=100 \
+    ro.sys.fw.trim_cache_percent=100 \
+    ro.sys.fw.trim_enable_memory=1073741824
