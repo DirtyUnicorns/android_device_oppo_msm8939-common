@@ -85,3 +85,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 #Optimal dex2oat threads for faster app installation
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sys.fw.dex2oat_thread_count=4
+
+#Set zygote max failed boots limit
+PRODUCT_PROPERTY_OVERRIDES += \
+    dalvik.vm.zygotemaxfailedboots=5
