@@ -6,6 +6,7 @@
 /dev/block/bootdevice/by-name/config                            u:object_r:frp_block_device:s0
 
 /data/cam_socket.*                                              u:object_r:camera_socket:s0
+/data/misc/camera/cam_socket*                                   u:object_r:camera_socket:s0
 
 /persist/.genmac                                                u:object_r:wifi_data_file:s0
 /persist/.bt_nv.bin                                             u:object_r:bluetooth_data_file:s0
