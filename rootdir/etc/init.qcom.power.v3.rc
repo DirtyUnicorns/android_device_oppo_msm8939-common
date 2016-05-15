@@ -120,3 +120,10 @@ on property:init.svc.recovery=running
 
 on property:dev.bootcomplete=1
     setprop sys.io.scheduler "bfq"
+
+on property:init.svc.bootanim=stopped
+    # Allow PowerHal configure cpu
+    chown system system /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
+    chown system system /sys/devices/system/cpu/cpu1/cpufreq/scaling_min_freq
+    chown system system /sys/devices/system/cpu/cpu2/cpufreq/scaling_min_freq
+    chown system system /sys/devices/system/cpu/cpu3/cpufreq/scaling_min_freq
